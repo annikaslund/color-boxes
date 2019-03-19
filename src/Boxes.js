@@ -30,9 +30,15 @@ class Boxes extends Component {
             copy.splice(randomIdx, 1, randomColor);
             return { colorBoxes: copy };
         });
+    }
         
     render() {
-        return ()
+        return (
+            <div className="Boxes">
+                { this.state.colorBoxes.map(color => <ColorBox bgColor={color}/>) }
+                <button className="Boxes-change-btn" onClick={this.handleClick}>Change</button>
+            </div>
+        );
     }
 }
 

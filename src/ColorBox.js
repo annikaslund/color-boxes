@@ -10,4 +10,4 @@ class ColorBox extends Component {
     }
 }
 
-export default ColorBox;
+export default ColorBox
